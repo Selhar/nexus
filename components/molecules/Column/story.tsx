@@ -3,7 +3,7 @@ import { Story, Meta } from '@storybook/react'
 import { Column, ColumnProps } from '.'
 
 export default {
-  title: 'Atoms/Column',
+  title: 'Molecules/Column',
   component: Column,
 } as Meta
 
