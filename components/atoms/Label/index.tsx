@@ -4,8 +4,8 @@ export interface labelProps {
 }
 
 export const Label = ({text, onClickHandler}: labelProps) => (
-  <h4 onClick={onClickHandler} 
-      className={"cursor-pointer w-full h-5 "}>
+  <span onClick={onClickHandler} 
+      className={"cursor-pointer w-max"}>
     {text}
-  </h4>
+  </span>
 )
