@@ -5,19 +5,19 @@ module.exports = {
   theme: {
     extend: {
       width: {
-        columnSize: "300px"
+        columnSize: '300px'
       },
-      backgroundColor: {
+      colors: {
         primary: '#19052b',
         primaryHover: '#795599'
       },
       textColor: {
         primary: '#fff'
       }
-    },
+    }
   },
   variants: {
-    extend: {},
+    extend: {}
   },
-  plugins: [],
+  plugins: []
 }

@@ -1,11 +1,14 @@
+import classNames from 'classnames'
 export interface labelProps {
-  text: string,
+  text: string
   onClickHandler?: () => void
+  classes?: string
 }
 
-export const Label = ({text, onClickHandler}: labelProps) => (
-  <span onClick={onClickHandler} 
-      className={"cursor-pointer w-max"}>
+export const Label = ({ text, onClickHandler, classes = '' }: labelProps) => (
+  <span
+    onClick={onClickHandler}
+    className={classNames('cursor-pointer w-max select-none', classes)}>
     {text}
   </span>
 )

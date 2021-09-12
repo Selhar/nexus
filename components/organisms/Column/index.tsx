@@ -1,16 +1,15 @@
-import { EditableLabel } from "../../molecules/EditableLabel";
-import "./style.css"
+import { EditableLabel } from '../../molecules/EditableLabel'
 export interface ColumnProps {
   title?: string
   children?: React.ReactNode
 }
 
-export const Column = ({
-  title,
-  children,
-}: ColumnProps) => (
-  <div className=" columnContainer rounded-sm px-3 pb-3 pt-2 ">
-    <EditableLabel initialText={title} classes={""}/>
+export const Column = ({ title, children }: ColumnProps) => (
+  <div className="w-columnSize rounded-sm pb-3 border-2 border-primary">
+    <EditableLabel
+      initialText={title}
+      containerClasses={'bg-primary text-primary'}
+    />
     {children}
   </div>
 )

@@ -1,33 +1,49 @@
-import { Label } from "../../atoms/Label"
-import React, { useState } from "react"
-import "./style.css"
+import React, { useState } from 'react'
+import classNames from 'classnames'
+
+import { Label } from '../../atoms/Label'
 
 export interface EditableLabelProps {
   initialText?: string
-  classes?: string
+  inputClasses?: string
+  labelClasses?: string
+  containerClasses?: string
 }
 
-export const EditableLabel = ({initialText="", classes=""}: EditableLabelProps) => {
+export const EditableLabel = ({
+  initialText = '',
+  labelClasses = '',
+  inputClasses = '',
+  containerClasses = ''
+}: EditableLabelProps) => {
   const [isEditing, setIsEditing] = useState(false)
   const [text, setText] = useState(initialText)
 
   return (
-    <div 
-      onClick={() => {setIsEditing(true)}} 
-      className={"cursor-pointer p-2 bg-primary text-primary align-middle" + classes } >
-      {
-        isEditing ? 
-        <textarea 
-          onBlur={() => 
-          setIsEditing(false)} 
-          value={text} 
+    <div
+      onClick={() => {
+        setIsEditing(true)
+      }}
+      className={classNames('cursor-pointer p-1', containerClasses)}>
+      {isEditing ? (
+        <textarea
+          onBlur={() => setIsEditing(false)}
+          value={text}
           maxLength={150}
           rows={1}
           autoFocus
-          className={"outline-none w-full bg-primary text-primary"}
-          onChange={(event: React.ChangeEvent<HTMLTextAreaElement>) => setText(event?.currentTarget.value)} />
-        : <Label text={text} onClickHandler={() => setIsEditing(true)} />  
-      }
+          className={classNames('outline-none w-full', inputClasses)}
+          onChange={(event: React.ChangeEvent<HTMLTextAreaElement>) =>
+            setText(event?.currentTarget.value)
+          }
+        />
+      ) : (
+        <Label
+          text={text}
+          onClickHandler={() => setIsEditing(true)}
+          classes={labelClasses}
+        />
+      )}
     </div>
   )
 }
