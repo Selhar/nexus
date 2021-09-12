@@ -1,6 +1,6 @@
 import Head from 'next/head'
 
-import { Column } from '@/atoms/Column'
+import { Column } from '@/organisms/Column'
 
 export default function Home() {
   return (
