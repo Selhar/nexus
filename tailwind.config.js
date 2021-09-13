@@ -9,7 +9,7 @@ module.exports = {
       },
       colors: {
         primary: '#19052b',
-        primaryHover: '#795599'
+        secondary: '#795599'
       },
       textColor: {
         primary: '#fff'

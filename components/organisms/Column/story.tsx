@@ -1,16 +1,17 @@
-
+/* eslint-disable react/jsx-key */
+import { Card } from '@/molecules/Card'
 import { Story, Meta } from '@storybook/react'
 import { Column, ColumnProps } from '.'
 
 export default {
   title: 'Organisms/Column',
-  component: Column,
+  component: Column
 } as Meta
 
-const Template: Story<ColumnProps> = args => <Column {...args} />
+const Template: Story<ColumnProps> = (args) => <Column {...args} />
 
 export const Default = Template.bind({})
 Default.args = {
-  title: "Teste default",
-  children: <h1>oi teste subdiv</h1>
+  title: 'Teste default',
+  cards: ['first card', 'second card']
 }

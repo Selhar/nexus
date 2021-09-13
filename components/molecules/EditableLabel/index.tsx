@@ -30,9 +30,8 @@ export const EditableLabel = ({
           onBlur={() => setIsEditing(false)}
           value={text}
           maxLength={150}
-          rows={1}
           autoFocus
-          className={classNames('outline-none w-full', inputClasses)}
+          className={classNames('outline-none w-full h-auto', inputClasses)}
           onChange={(event: React.ChangeEvent<HTMLTextAreaElement>) =>
             setText(event?.currentTarget.value)
           }

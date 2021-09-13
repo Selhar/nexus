@@ -5,4 +5,5 @@
 textarea {
   background-color: inherit;
   color: inherit;
+  resize: none;
 }
