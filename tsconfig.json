@@ -1,19 +1,7 @@
 {
   "compilerOptions": {
-    "baseUrl": ".",
-    "paths": {
-      "@/atoms/*": ["components/atoms/*"],
-      "@/molecules/*": ["components/molecules/*"],
-      "@/organisms/*": ["components/organisms/*"],
-      "@/templates/*": ["components/templates/*"],
-      "@/pages/*": ["pages/*"],
-    },
     "target": "es5",
-    "lib": [
-      "dom",
-      "dom.iterable",
-      "esnext"
-    ],
+    "lib": ["dom", "dom.iterable", "esnext"],
     "allowJs": true,
     "skipLibCheck": true,
     "strict": true,
@@ -26,12 +14,6 @@
     "isolatedModules": true,
     "jsx": "preserve"
   },
-  "include": [
-    "next-env.d.ts",
-    "**/*.ts",
-    "**/*.tsx"
-  ],
-  "exclude": [
-    "node_modules"
-  ]
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx"],
+  "exclude": ["node_modules"]
 }
