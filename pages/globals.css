@@ -14,3 +14,9 @@ a {
 * {
   box-sizing: border-box;
 }
+
+textarea {
+  background-color: inherit;
+  color: inherit;
+  resize: none;
+}

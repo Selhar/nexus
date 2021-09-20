@@ -1,7 +1,13 @@
-import '../styles/globals.css'
-import type { AppProps } from 'next/app'
+import "./globals.css";
+import type { AppProps } from "next/app";
+import React from "react";
+import { DragDropContext } from "react-beautiful-dnd";
 
 function MyApp({ Component, pageProps }: AppProps) {
-  return <Component {...pageProps} />
+  return (
+    <DragDropContext onDragEnd={(result) => undefined}>
+      <Component {...pageProps} />
+    </DragDropContext>
+  );
 }
-export default MyApp
+export default MyApp;
