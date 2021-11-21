@@ -1,0 +1,14 @@
+.container {
+  width: 300px;
+  margin-left: 10px;
+}
+
+.label {
+  background-color: red;
+  color: white;
+}
+
+.cards {
+  padding: 20px;
+  background: red;
+}

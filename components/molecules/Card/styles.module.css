@@ -1,0 +1,11 @@
+.container {
+  cursor: pointer;
+  padding: 10px;
+  box-shadow: 0 1px 0 #091e4240;
+}
+
+.editable {
+  outline: none;
+  width: 100%;
+  height: auto;
+}
