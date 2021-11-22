@@ -9,7 +9,7 @@ export const CardList = ({
   classes,
   innerRef,
 }) => (
-  <div className={classNames(classes)} ref={innerRef}>
+  <div className={classNames(styles.container, classes)} ref={innerRef}>
     {texts?.map((text, index) => (
       <Card
         key={text + index}

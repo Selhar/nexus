@@ -1,10 +1,7 @@
 .container {
   cursor: pointer;
-  padding: 10px;
 }
 
 .editable {
-  outline: none;
-  width: 100%;
-  height: auto;
+  font-family: var(--font-primary);
 }

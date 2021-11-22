@@ -1,14 +1,14 @@
 .container {
   width: 300px;
-  margin-left: 10px;
+  background-color: var(--color-secondary);
+  padding: var(--padding-large);
+  border-radius: var(--radius-default);
 }
 
 .label {
-  background-color: red;
-  color: white;
+  font-weight: bold;
 }
 
 .cards {
   padding: 20px;
-  background: red;
 }

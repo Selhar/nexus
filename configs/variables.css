@@ -1,0 +1,20 @@
+:root {
+  /*  Colors  */
+  --color-primary: red;
+  --color-secondary: #e6cffc;
+  --color-shadow: rgba(0, 0, 0, 0.04);
+
+  /* Spacing */
+  --padding-default: 4px;
+  --padding-large: 12px;
+  --margin-default: 12px;
+
+  /* Fonts */
+  --font-primary: 'Lato', sans-serif;
+
+  /* Font sizes */
+  --font-size-primary: 16px;
+
+  /* Misc */
+  --radius-default: 2px;
+}
